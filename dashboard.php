@@ -49,9 +49,9 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
                             <div class="info-box"> <span class="info-box-icon text-bg-warning shadow-sm"> <i class="bi bi-cart"></i></span>
-                                <div class="info-box-content"> <a href="pesanan.php" class="link-dark text-center"> </a>
+                                <div class="info-box-content"> <a href="pesanan.php" class="link-dark text-center">
                                     <span class="info-box-text"> Total Pengiriman</span> <span class="info-box-number">
-                                    <?php echo $totalPesanan; ?></span>
+                                    <?php echo $totalPesanan; ?></span>  </a>
                                                   
                                 </div> <!--/.info-box-content-->
                             </div> <!-- /.info=box-->
