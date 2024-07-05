@@ -59,7 +59,7 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>Tanggal Pengiriman</th>
                             <th>Nama Pemesan</th>
                             <th>Lauk Utama</th>
                             <th>Lauk Tambahan 1</th>
