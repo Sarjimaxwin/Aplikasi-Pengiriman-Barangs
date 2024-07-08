@@ -96,6 +96,7 @@
                     </div>
                     <div class="col-sm-6 text-end">
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahPesananModal">Tambah Pengiriman</button>
+                        <a href="signout.php" class="btn btn-danger ms-2">Sign Out</a>
                     </div>
                 </div>
             </div>
