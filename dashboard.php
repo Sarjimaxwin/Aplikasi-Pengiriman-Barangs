@@ -39,7 +39,7 @@
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Jumlah Pengiriman</h3>
+                            <h3 class="mb-0">JE EN EE</h3>
                         </div>
                     </div> <!--end::Row-->
                 <div> <!--end::Container-->
@@ -48,7 +48,7 @@
                 <div class="container-fluid"> <!-- Info boxes -->
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
-                            <div class="info-box"> <span class="info-box-icon text-bg-warning shadow-sm"> <i class="bi bi-cart"></i></span>
+                            <div class="info-box"> <span class="info-box-icon text-bg-warning shadow-sm"> <i class="bi bi-truck"></i></span>
                                 <div class="info-box-content"> <a href="pesanan.php" class="link-dark text-center">
                                     <span class="info-box-text"> Total Pengiriman</span> <span class="info-box-number">
                                     <?php echo $totalPesanan; ?></span>  </a>
