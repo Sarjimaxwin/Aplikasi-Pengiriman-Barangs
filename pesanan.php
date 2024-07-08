@@ -73,7 +73,7 @@
     include("koneksi.php");
 
     // Pagination settings
-    $limit = 5;
+    $limit = 10;
     $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
     $offset = ($page - 1) * $limit;
 
@@ -102,7 +102,7 @@
         </div>
         <div class="app-content">
             <div class="container-fluid">
-                <table class="table table-bordered"> <!-- Removed table-header-center class -->
+                <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>No</th>
