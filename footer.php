@@ -8,10 +8,11 @@ if(empty($_SESSION['email'])){
     ?>
 
 <footer class="app-footer"> <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline"></div> <!--end::To the end--> <!--begin::Copyright--> <strong>
-                Copyright &copy; 2024&nbsp;
-                <a  class="text-decoration-none">MOHAMAD BINTANG PRASETYO</a>.
-            </strong>
+            <!--end::To the end--> <!--begin::Copyright-->
+             
+               <b> Copyright &copy; 2024 
+                <a  class="text-decoration-none">Anto Tegar Bintang</a>.
+        
             All rights reserved.
             <!--end::Copyright-->
         </footer> <!--end::Footer-->
