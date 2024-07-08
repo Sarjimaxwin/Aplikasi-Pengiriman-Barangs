@@ -8,21 +8,21 @@ if(empty($_SESSION['email'])){
     ?>
 <!--begin::Sidebar-->
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
-            <div class="sidebar-brand"> <!--begin::Brand Link--> <a class="brand-link"> <!--begin::Brand Image--> <img src="assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">Bintang Kantin</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a class="brand-link"> <!--begin::Brand Image-->  <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">JE EN EE</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                        
-                        <li class="nav-item"> <a href="dashboard.php" class="nav-link"> <i class="nav-icon bi bi-speedometer"></i>
+                        <li class="nav-item"> <a href="dashboard.php" class="nav-link"> <i class="nav-icon bi bi-house-door-fill"></i>
                                 <p>
-                                    Dashboard
+                                    Menu Utama
                                     <span class="nav-badge badge text-bg-secondary me-3"></span> 
                                 </p>
                             </a>
                          </li>   
-                         <li class="nav-item"> <a href="pesanan.php" class="nav-link"> <i class="nav-icon bi bi-bucket-fill"></i>
+                         <li class="nav-item"> <a href="pesanan.php" class="nav-link"> <i class="nav-icon bi bi-truck"></i>
                                 <p>
-                                    Pesanan 
+                                    Daftar Pengiriman 
                                     <span class="nav-badge badge text-bg-secondary me-3"></span> 
                                 </p>
                             </a>
@@ -34,9 +34,9 @@ if(empty($_SESSION['email'])){
                                 </p>
                             </a>
                          </li>     
-                         <li class="nav-item"> <a href="signout.php" class="nav-link"> <i class="nav-icon bi bi-escape"></i>
+                         <li class="nav-item"> <a href="signout.php" class="nav-link"> <i class="nav-icon bi bi-box-arrow-left"></i>
                                 <p>
-                                    Signout
+                                    Keluar
                                     <span class="nav-badge badge text-bg-secondary me-3"></span> 
                                 </p>
                             </a>
