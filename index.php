@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>AdminLTE 4 | Login Page v2</title><!--begin::Primary Meta Tags-->
+    <title>Login</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="AdminLTE 4 | Login Page v2">
     <meta name="author" content="ColorlibHQ">
@@ -54,12 +54,11 @@ if (isset($_POST['submit'])) {
 <body class="login-page bg-body-secondary" background-color="red">
     <div class="login-box">
         <div class="card card-outline card-primary">
-            <div class="card-header"> <a href="" class="link-dark text-center ">
-                    <h1 class="mb-0"> <b>KANTINKU</b>
-                    </h1>
+            <div class="card-header"> <a class="link-dark text-center ">
+                    <h1 class="mb-0"> <b>JE EN EE</b></h1><br><h3>Pengiriman Barang Terpercaya</h3>
                 </a> </div>
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Log In Untuk Masuk</p>
                 <form action="" method="post" >
                     <div class="input-group mb-1">
                         <div class="form-floating"> <input id="loginEmail" name="email"type="email" class="form-control" value="" placeholder="" required> <label for="loginEmail">Email</label> </div>
@@ -72,18 +71,18 @@ if (isset($_POST['submit'])) {
                     <div class="row">
                         <div class="col-8 d-inline-flex align-items-center">
                             <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">
-                                    Remember Me
+                                    Ingatkan Saya
                                 </label> </div>
                         </div> <!-- /.col -->
                         <div class="col-4">
-                            <div class="d-grid gap-2"> <button type="submit" name = "submit" class="btn btn-primary">Sign In</button> </div>
+                            <div class="d-grid gap-2"> <button type="submit" name = "submit" class="btn btn-primary">Masuk</button> </div>
                         </div> <!-- /.col -->
                     </div> <!--end::Row-->
                 </form>
                 
                
                 <p class="mb-0"> <a href="register-v2.php" class="text-center">
-                        Register a new membership
+                        Saya Belum Mempunyai Akun
                     </a> </p>
             </div> <!-- /.login-card-body -->
         </div>
