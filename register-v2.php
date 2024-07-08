@@ -19,14 +19,14 @@
     <div class="register-box"> <!-- /.register-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header"> <a class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover">
-                    <h1 class="mb-0"> <b>Kantin</b>Bintang
+                    <h1 class="mb-0"> <b>JE EN EE</b></h1><BR><h3>Pengiriman barang Terpercaya</h3>
                     </h1>
                 </a> </div>
             <div class="card-body register-card-body">
-                <p class="register-box-msg">Register a new membership</p>
+                <p class="register-box-msg">Buat Akun Baru</p>
                 <form action="tambah_data.php" method="post">
                     <div class="input-group mb-1">
-                        <div class="form-floating"> <input id="fullName" type="text" class="form-control" name="fullname" placeholder="" required> <label for="registerFullName">Full Name</label> </div>
+                        <div class="form-floating"> <input id="fullName" type="text" class="form-control" name="fullname" placeholder="" required> <label for="registerFullName">Nama Lengkap</label> </div>
                         <div class="input-group-text"> <span class="bi bi-person"></span> </div>
                     </div>
                     <div class="input-group mb-1">
@@ -57,7 +57,7 @@
                     <div class="row">
                         <div class="col-8 d-inline-flex align-items-center">
                             <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required> <label class="form-check-label" for="flexCheckDefault">
-                                    I agree to the <a href="#">terms</a> </label> </div>
+                                    Saya Setuju Dengan <a href="#">Persyaratannya</a> </label> </div>
                         </div> <!-- /.col -->
                         <div class="col-4">
                             <div class="d-grid gap-2"> <button type="submit" class="btn btn-primary">Buat Akun</button> </div>
