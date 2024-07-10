@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JE EN EE - Login</title>
+    <title>Login - JE EN EE</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
@@ -43,16 +43,17 @@ if (isset($_POST['submit'])) {
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: #f0f0f0;
+            background-color: #f8f9fa;
+            font-family: 'Source Sans Pro', sans-serif;
         }
 
         .login-container {
             max-width: 400px;
             margin: 0 auto;
             padding: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             margin-top: 100px;
         }
 
@@ -63,7 +64,7 @@ if (isset($_POST['submit'])) {
 
         .login-title h1 {
             font-weight: bold;
-            color: #333;
+            color: #333333;
         }
 
         .login-form .form-floating {
@@ -74,7 +75,7 @@ if (isset($_POST['submit'])) {
         .login-form .form-floating input {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #ced4da;
             border-radius: 5px;
         }
 
@@ -83,8 +84,8 @@ if (isset($_POST['submit'])) {
             top: 50%;
             left: 10px;
             transform: translateY(-50%);
-            color: #777;
-            background-color: #fff;
+            color: #888888;
+            background-color: #ffffff;
             padding: 0 5px;
             font-size: 14px;
             pointer-events: none;
@@ -97,8 +98,8 @@ if (isset($_POST['submit'])) {
             left: 0;
             transform: translateY(-30%);
             font-size: 12px;
-            color: #333;
-            background: #fff;
+            color: #333333;
+            background: #ffffff;
             padding: 0 5px;
         }
 
@@ -116,7 +117,7 @@ if (isset($_POST['submit'])) {
         }
 
         .login-form .form-check-label {
-            color: #777;
+            color: #888888;
         }
 
         .login-form .forgot-password {
@@ -125,7 +126,7 @@ if (isset($_POST['submit'])) {
         }
 
         .login-form .forgot-password a {
-            color: #777;
+            color: #888888;
         }
 
         .login-form .create-account {
