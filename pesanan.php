@@ -95,8 +95,11 @@
                         <h3 class="mb-0">Daftar Pengiriman</h3>
                     </div>
                     <div class="col-sm-6 text-end">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahPesananModal">Tambah Pengiriman</button>
-                        <a href="signout.php" class="btn btn-danger ms-2">Sign Out</a>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahPesananModal">Tambah Pengiriman</button>
+                            <a href="profil.php" class="btn btn-secondary ms-2">Profil</a>
+                            <a href="signout.php" class="btn btn-danger ms-2">Keluar</a>
+                        </div>
                     </div>
                 </div>
             </div>
