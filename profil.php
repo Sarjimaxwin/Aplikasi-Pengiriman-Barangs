@@ -31,6 +31,10 @@
                     <div class="col-sm-6">
                         <h3 class="mb-0">Profil</h3>
                     </div>
+                    <div class="col-sm-6 text-end">
+                        <a href="pesanan.php" class="btn btn-primary me-2">Daftar Pengiriman</a>
+                        <a href="dashboard.php" class="btn btn-secondary">Menu Utama</a>
+                    </div>
                 </div>
             </div>
         </div>
