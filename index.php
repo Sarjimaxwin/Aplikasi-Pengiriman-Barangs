@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
 
 <body class="login-page bg-body-secondary" background-color="red">
 
-<style>
+<style>    
     body {
         background-color: #f0f0f0; /* Warna latar belakang */
         font-family: 'Source Sans Pro', sans-serif; /* Font family */
@@ -64,17 +64,17 @@ if (isset($_POST['submit'])) {
         justify-content: center;
         height: 100vh;
         margin: 0;
-        background-color: #f0f0f0; /* Warna latar belakang halaman login */
+        background-color: #0000CC; /* Warna latar belakang halaman login */
     }
     .login-box {
         width: 360px;
-        background-color: #fff; /* Warna latar belakang kotak login */
+        background-color: #0033FF; /* Warna latar belakang kotak login */
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Efek bayangan untuk kotak login */
     }
     .card-header {
-        background-color: #5d78ff; /* Warna header */
-        color: #fff; /* Warna teks header */
+        background-color: #0033FF; /* Warna header */
+        color: #FF0000; /* Warna teks header */
         border-bottom: none; /* Menghilangkan border bawah header */
         padding: 20px;
         border-top-left-radius: 10px;
@@ -84,11 +84,11 @@ if (isset($_POST['submit'])) {
         padding: 20px;
     }
     .btn-primary {
-        background-color: #5d78ff; /* Warna tombol Masuk */
+        background-color: #FF0000; /* Warna tombol Masuk */
         border-color: #5d78ff; /* Warna border tombol Masuk */
     }
     .btn-primary:hover {
-        background-color: #4b62d7; /* Warna tombol Masuk saat hover */
+        background-color: #0000CC; /* Warna tombol Masuk saat hover */
         border-color: #4b62d7; /* Warna border tombol Masuk saat hover */
     }
 </style>
