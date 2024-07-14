@@ -35,12 +35,6 @@ if(empty($_SESSION['email'])){
             color: red; /* Ubah warna teks "JE EN EE" menjadi merah */
         }
 
-        .brand-img {
-            width: 40px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
-            height: 40px;
-            border-radius: 50%; /* Untuk membuat gambar bulat */
-        }
-
         .nav-link p {
             color: red; /* Ubah warna teks pada tag <p> di dalam nav-link menjadi merah */
         }
@@ -54,9 +48,6 @@ if(empty($_SESSION['email'])){
         <div class="sidebar-brand">
             <!--begin::Brand Link-->
             <a href="#" class="brand-link">
-                <!--begin::Brand Image-->
-                <img src="path-to-your-image.jpg" alt="Logo" class="brand-img">
-                <!--end::Brand Image-->
                 <!--begin::Brand Text-->
                 <span class="brand-text fw-light">JE EN EE</span>
                 <!--end::Brand Text-->
