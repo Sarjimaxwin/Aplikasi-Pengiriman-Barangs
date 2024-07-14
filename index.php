@@ -93,6 +93,15 @@ if (isset($_POST['submit'])) {
     }
 </style>
 
+<style>
+
+    body
+    {
+        background-image: url(assets/img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
 
     <div class="login-box">
         <div class="card card-outline card-primary">
