@@ -14,7 +14,7 @@
         margin-bottom: 20px;
     }
     .app-content {
-        background-color: #fff; /* Warna latar belakang konten */
+        background-color: #AAA; /* Warna latar belakang konten */
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Efek bayangan untuk konten */
     }
