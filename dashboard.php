@@ -5,7 +5,7 @@
 <style>
     body {
         background-color: #f8f9fa; /* Warna latar belakang */
-        color: #333; /* Warna teks */
+        color: #0000FF; /* Warna teks */
     }
     .app-content-header {
         background-color: #5d78ff; /* Warna header */
