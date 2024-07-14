@@ -8,8 +8,8 @@
         color: #0000FF; /* Warna teks */
     }
     .app-content-header {
-        background-color: #5d78ff; /* Warna header */
-        color: #fff; /* Warna teks header */
+        background-color: #FF0000; /* Warna header */
+        color: #0000FF; /* Warna teks header */
         padding: 20px;
         margin-bottom: 20px;
     }
