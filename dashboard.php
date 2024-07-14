@@ -2,6 +2,25 @@
 <html lang="en">
 
 <head>
+<style>
+    body {
+        background-color: #f8f9fa; /* Warna latar belakang */
+        color: #333; /* Warna teks */
+    }
+    .app-content-header {
+        background-color: #5d78ff; /* Warna header */
+        color: #fff; /* Warna teks header */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .app-content {
+        background-color: #fff; /* Warna latar belakang konten */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Efek bayangan untuk konten */
+    }
+</style>
+
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Dashboard Pengiriman</title>
     <!--begin::Primary Meta Tags-->
