@@ -113,7 +113,7 @@ if (isset($_POST['submit'])) {
                         <input type="checkbox" class="form-check-input" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Ingatkan Saya</label>
                     </div>
-                    <button class="btn btn-primary">Masuk</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Masuk</button>
                 </form>
                 <p class="mt-3 mb-0 text-center">
                     Belum punya akun? <a href="register-v2.php">Daftar disini</a>
