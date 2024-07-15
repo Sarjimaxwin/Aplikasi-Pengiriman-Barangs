@@ -7,11 +7,11 @@ if (isset($_POST['submit'])) {
     $password = $_POST['password'];
 
     $stmt = $conn->prepare("SELECT email,password,nama_lengkap FROM tb_user WHERE email = ?");
-    $stmt ->bind_param("s", $email);
+    $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
 
-    if ($stmt->num_rows > 0){
+    if ($stmt->num_rows > 0) {
         $stmt->bind_result($db_email, $db_password, $db_nama);
         $stmt->fetch();
         if ($password == $db_password) {
@@ -19,174 +19,111 @@ if (isset($_POST['submit'])) {
             $_SESSION['nama'] = $db_nama;
             header("Location: dashboard.php");
             exit();
-        
-         } else {
-        echo"<script>alert('Password Salah!');</script>";
-    }
- } else {
-        echo"<script>alert('Email tidak terdaftar!');</script>";
+        } else {
+            echo "<script>alert('Password Salah!');</script>";
+        }
+    } else {
+        echo "<script>alert('Email tidak terdaftar!');</script>";
     }
     $stmt->close();
     $conn->close();
-    }
-    ?>
+}
+?>
 <!DOCTYPE html>
-<html lang="en"> <!--begin::Head-->
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Login</title><!--begin::Primary Meta Tags-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="AdminLTE 4 | Login Page v2">
-    <meta name="author" content="ColorlibHQ">
-    <meta name="description" content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
-    <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard"><!--end::Primary Meta Tags--><!--begin::Fonts-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
-    <link rel="stylesheet" href="adminlte.css"><!--end::Required Plugin(AdminLTE)-->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
 
-    
-   
-</head> <!--end::Head--> <!--begin::Body-->
+        .login-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #0033FF;
+            background-image: url('assets/img/background.jpg');
+            background-size: cover;
+        }
 
-<body class="login-page bg-body-secondary" background-color="red">
+        .login-box {
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-<style>    
-    body {
-        background-color: #f0f0f0; /* Warna latar belakang */
-        font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    }
-    .login-page {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #0000CC; /* Warna latar belakang halaman login */
-    }
-    .login-box {
-        width: 360px;
-        background-color: #0033FF; /* Warna latar belakang kotak login */
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Efek bayangan untuk kotak login */
-    }
-    .card-header {
-        background-color: #0033FF; /* Warna header */
-        color: #FF0000; /* Warna teks header */
-        border-bottom: none; /* Menghilangkan border bawah header */
-        padding: 20px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .card-body {
-        padding: 20px;
-    }
-    .btn-primary {
-        background-color: #FF0000; /* Warna tombol Masuk */
-        border-color: #5d78ff; /* Warna border tombol Masuk */
-    }
-    .btn-primary:hover {
-        background-color: #0000CC; /* Warna tombol Masuk saat hover */
-        border-color: #4b62d7; /* Warna border tombol Masuk saat hover */
-    }
-</style>
+        .card-header {
+            background-color: #0033FF;
+            color: #ffffff;
+            border-bottom: none;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
 
-<style>
+        .card-body {
+            padding: 20px;
+        }
 
-    body
-    {
-        background-image: url(assets/img/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
+        .btn-primary {
+            background-color: #FF0000;
+            border-color: #FF0000;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #0000CC;
+            border-color: #0000CC;
+        }
+    </style>
+</head>
+
+<body class="login-page">
 
     <div class="login-box">
-        <div class="card card-outline card-primary">
-            <div class="card-header"> <a class="link-dark text-center ">
-                    <h1 class="mb-0"> <b>JE EN EE</b></h1><br><h3>Pengiriman Barang Terpercaya</h3>
-                </a> </div>
-            <div class="card-body login-card-body">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1 class="mb-0"><b>JE EN EE</b></h1>
+                <h3>Pengiriman Barang Terpercaya</h3>
+            </div>
+            <div class="card-body">
                 <p class="login-box-msg">Log In Untuk Masuk</p>
-                <form action="" method="post" >
-                    <div class="input-group mb-1">
-                        <div class="form-floating"> <input id="loginEmail" name="email"type="email" class="form-control" value="" placeholder="" required> <label for="loginEmail">Email</label> </div>
-                        <div class="input-group-text"> <span class="bi bi-envelope"></span> </div>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" name="email" required>
                     </div>
-                    <div class="input-group mb-1">
-                        <div class="form-floating"> <input id="loginPassword" name="password" type="password" class="form-control" placeholder="" required> <label for="loginPassword">Password</label> </div>
-                        <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
-                    </div> <!--begin::Row-->
-                    <div class="row">
-                        <div class="col-8 d-inline-flex align-items-center">
-                            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">
-                                    Ingatkan Saya
-                                </label> </div>
-                        </div> <!-- /.col -->
-                        <div class="col-4">
-                            <div class="d-grid gap-2"> <button type="submit" name = "submit" class="btn btn-primary">Masuk</button> </div>
-                        </div> <!-- /.col -->
-                    </div> <!--end::Row-->
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" name="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Ingatkan Saya</label>
+                    </div>
+                    <button class="btn btn-primary">Masuk</button>
                 </form>
-                
-               
-                <p class="mb-0"> <a href="register-v2.php" class="text-center">
-                        Saya Belum Mempunyai Akun
-                    </a> </p>
-            </div> <!-- /.login-card-body -->
+                <p class="mt-3 mb-0 text-center">
+                    Belum punya akun? <a href="register-v2.php">Daftar disini</a>
+                </p>
+            </div>
         </div>
-        
-    </div> <!-- /.login-box --> <!--begin::Third Party Plugin(OverlayScrollbars)-->
-    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-    <script src="./js/adminlte.js"></script>
-    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
-    <script>
-        const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
-        const Default = {
-            scrollbarTheme: "os-theme-light",
-            scrollbarAutoHide: "leave",
-            scrollbarClickScroll: true,
-        };
-        document.addEventListener("DOMContentLoaded", function() {
-            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
-            if (
-                sidebarWrapper &&
-                typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
-            ) {
-                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
-                    scrollbars: {
-                        theme: Default.scrollbarTheme,
-                        autoHide: Default.scrollbarAutoHide,
-                        clickScroll: Default.scrollbarClickScroll,
-                    },
-                });
-            }
-        });
-    
-           
-    
-    </script> <!--end::OverlayScrollbars Configure--> <!--end::Script-->
-    <script>
-        function validateLogin()
-               {
-                   var email=document.getElementById("loginEmail").value;
-                   var password=document.getElementById("loginPassword").value;
-                   if(email=="ridwan123@gmail.com"&&password==="ganteng"){
-                       return true;
-                   }
-                   else{
-                       alert("email atau password salah");
-                       return false;
-                   }
-               }
-   
-   </script>
-   
-</body><!--end::Body-->
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
