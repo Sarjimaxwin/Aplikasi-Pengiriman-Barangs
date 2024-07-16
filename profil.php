@@ -20,7 +20,7 @@
             background-color: #f8f9fa; /* Light gray background */
         }
         .app-content-header {
-            background-color: #007bff; /* Blue header background */
+            background-color: #FF0000; /* Blue header background */
             color: #fff; /* White text */
             padding: 20px 0;
         }
