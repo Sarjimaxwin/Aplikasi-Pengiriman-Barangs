@@ -47,15 +47,15 @@
         <div class="social-icons">
             <a href="https://facebook.com/antotegarbintang" target="_blank">
                 <i class="fab fa-facebook"></i>
-                <span class="icon-label">Facebook</span>
+                <span class="icon-label">Anto uhuyy 123</span>
             </a>
             <a href="https://twitter.com/antotegarbintang" target="_blank">
                 <i class="fab fa-twitter"></i>
-                <span class="icon-label">Twitter</span>
+                <span class="icon-label">Tegarrr</span>
             </a>
             <a href="https://instagram.com/antotegarbintang" target="_blank">
                 <i class="fab fa-instagram"></i>
-                <span class="icon-label">Instagram</span>
+                <span class="icon-label">Bintang</span>
             </a>
         </div>
         <b>
