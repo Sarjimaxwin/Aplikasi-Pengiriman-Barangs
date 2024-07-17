@@ -59,7 +59,7 @@
         }
 
         .pagination .page-link {
-            color: #007bff;
+            color: #000; /* Mengubah warna teks nomor halaman menjadi hitam */
         }
 
         .pagination .page-item.active .page-link {
