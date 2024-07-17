@@ -22,23 +22,41 @@
             bottom: 0;
             width: 100%;
         }
+        .social-icons {
+            margin-bottom: 10px;
+        }
         .social-icons a {
             color: white;
             margin: 0 10px;
             font-size: 20px;
+            display: inline-block;
             transition: transform 0.3s ease;
         }
         .social-icons a:hover {
             transform: scale(1.2);
+        }
+        .social-icons .icon-label {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
     <footer class="app-footer">
         <div class="social-icons">
-            <a href="https://facebook.com/antotegarbintang" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/antotegarbintang" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/antotegarbintang" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/antotegarbintang" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <span class="icon-label">Facebook</span>
+            </a>
+            <a href="https://twitter.com/antotegarbintang" target="_blank">
+                <i class="fab fa-twitter"></i>
+                <span class="icon-label">Twitter</span>
+            </a>
+            <a href="https://instagram.com/antotegarbintang" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="icon-label">Instagram</span>
+            </a>
         </div>
         <b>
             <span>&copy; 2024 </span>
