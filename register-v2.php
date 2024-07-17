@@ -2,6 +2,65 @@
 <html lang="en"> <!--begin::Head-->
 
 <head>
+<style>
+    body {
+        background: linear-gradient(to bottom right, #2980b9, #6dd5fa);
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #333;
+    }
+
+    .register-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .register-box {
+        width: 360px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #0033FF;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        background-color: #FF0000;
+        border-color: #FF0000;
+        width: 100%;
+    }
+
+    .btn-primary:hover {
+        background-color: #0000CC;
+        border-color: #0000CC;
+    }
+
+    .form-floating input.form-control {
+        border-radius: 5px;
+    }
+
+    .form-floating label {
+        color: #555;
+    }
+
+    .link-primary {
+        color: #007bff;
+    }
+</style>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Login kantin</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +77,11 @@
 <body class="register-page bg-body-secondary">
     <div class="register-box"> <!-- /.register-logo -->
         <div class="card card-outline card-primary">
-            <div class="card-header"> <a class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover">
-                    <h1 class="mb-0"> <b>JE EN EE</b></h1><BR><h3>Pengiriman barang Terpercaya</h3>
+            <div class="card-header">
+    <h1 class="mb-0"> <b>JE EN EE</b></h1>
+    <h3>Pengiriman barang Terpercaya</h3>
+</div>
+
                     </h1>
                 </a> </div>
             <div class="card-body register-card-body">
