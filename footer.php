@@ -16,7 +16,7 @@
         .app-footer {
             background-image: linear-gradient(to right, #ff3366, #ff9933);
             color: white;
-            text-align: center;
+            text-align: left;
             padding: 20px 0;
             position: fixed;
             bottom: 0;
@@ -47,11 +47,11 @@
         <div class="social-icons">
             <a target="_blank">
                 <i class="fab fa-facebook"></i>
-                <span class="icon-label">Anto uhuyy 123</span>
+                <span class="icon-label">Anto</span>
             </a>
             <a target="_blank">
                 <i class="fab fa-twitter"></i>
-                <span class="icon-label">Tegarrr</span>
+                <span class="icon-label">Tegar</span>
             </a>
             <a target="_blank">
                 <i class="fab fa-instagram"></i>
