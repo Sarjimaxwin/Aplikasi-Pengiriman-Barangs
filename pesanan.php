@@ -7,61 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="AdminLTE | Dashboard v2">
     <meta name="author" content="ColorlibHQ">
-    <meta name="description"
-        content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
-    <meta name="keywords"
-        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
-        integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q="
-        crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css"
-        integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg="
-        crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css"
-        integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI="
-        crossorigin="anonymous">
+    <meta name="description" content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
+    <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous">
     <link rel="stylesheet" href="adminlte.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
-        integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0="
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I="
-        crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8="
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script>
 
     <style>
-        /* Custom CSS for centering table headers and data */
-        .table {
-            width: 100%;
-            margin-bottom: 1rem;
-            color: #212529;
-            border-collapse: collapse;
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #f0f0f0;
         }
 
         .table th,
         .table td {
-            padding: 0.75rem;
-            vertical-align: top;
-            border-top: 1px solid #dee2e6;
-            text-align: center; /* Center align text in both headers and data cells */
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .table td {
+            background-color: #fff;
         }
 
         .table thead th {
-            vertical-align: bottom;
-            border-bottom: 2px solid #dee2e6;
+            border-bottom: 2px solid #007bff;
         }
 
-        .table tbody + tbody {
-            border-top: 2px solid #dee2e6;
+        .btn-primary,
+        .btn-secondary,
+        .btn-danger {
+            margin-right: 10px;
+        }
+
+        .modal-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .modal-title {
+            color: #fff;
+        }
+
+        .pagination .page-link {
+            color: #007bff;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #6c757d;
+        }
+
+        .pagination {
+            justify-content: center;
         }
     </style>
 </head>
@@ -83,7 +94,6 @@
     $total_rows = mysqli_fetch_assoc($total_result)['count'];
     $total_pages = ceil($total_rows / $limit);
     $start_no = ($page - 1) * $limit + 1; // Calculate starting serial number
-
     ?>
 
     <!-- Main content -->
@@ -96,9 +106,15 @@
                     </div>
                     <div class="col-sm-6 text-end">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahPesananModal">Tambah Pengiriman</button>
-                            <a href="profil.php" class="btn btn-secondary ms-2">Profil</a>
-                            <a href="signout.php" class="btn btn-danger ms-2">Keluar</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahPesananModal">
+                                <i class="bi bi-plus-lg"></i> Tambah Pengiriman
+                            </button>
+                            <a href="profil.php" class="btn btn-secondary">
+                                <i class="bi bi-person"></i> Profil
+                            </a>
+                            <a href="signout.php" class="btn btn-danger">
+                                <i class="bi bi-box-arrow-right"></i> Keluar
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +122,7 @@
         </div>
         <div class="app-content">
             <div class="container-fluid">
-                <table class="table table-bordered">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -119,7 +135,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                        <?php while ($row = mysqli_fetch_assoc($result)) : ?>
                             <tr>
                                 <td><?php echo $start_no++; ?></td>
                                 <td><?php echo $row['nama_pemesan']; ?></td>
@@ -128,8 +144,12 @@
                                 <td><?php echo $row['lauk_tambahan_dua']; ?></td>
                                 <td><?php echo $row['catatan']; ?></td>
                                 <td>
-                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editPesananModal<?php echo $row['id']; ?>">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deletePesanan(<?php echo $row['id']; ?>)">Hapus</button>
+                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editPesananModal<?php echo $row['id']; ?>">
+                                        <i class="bi bi-pencil"></i> Edit
+                                    </button>
+                                    <button class="btn btn-danger btn-sm" onclick="deletePesanan(<?php echo $row['id']; ?>)">
+                                        <i class="bi bi-trash"></i> Hapus
+                                    </button>
                                 </td>
                             </tr>
 
@@ -178,7 +198,7 @@
                         <li class="page-item <?php if ($page <= 1) echo 'disabled'; ?>">
                             <a class="page-link" href="?page=<?php echo $page - 1; ?>">Kembali</a>
                         </li>
-                        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                        <?php for ($i = 1; $i <= $total_pages; $i++) : ?>
                             <li class="page-item <?php if ($page == $i) echo 'active'; ?>">
                                 <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
                             </li>
