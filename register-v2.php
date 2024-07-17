@@ -59,6 +59,63 @@
     .link-primary {
         color: #007bff;
     }
+    /* Background Gradients */
+body {
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+
+/* Register Box Styling */
+.register-box {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.card-header {
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #f44336;
+    border-color: #f44336;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e91e63;
+    border-color: #e91e63;
+}
+
+.form-floating input.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.form-floating label {
+    color: #555;
+    font-size: 14px;
+}
+
+.link-primary {
+    color: #2196f3;
+}
+
 </style>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
